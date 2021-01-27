@@ -1,0 +1,55 @@
+section {
+    width: 180px;
+    padding: 10px;
+    margin: 0px 5px 5px 20px;
+    border: 1px dotted gray;
+    background-color: yellow;
+}
+
+.operation {
+    width: 90px;
+    padding: 10px;
+    margin: 0px 5px 5px 20px;
+    border: 1px dotted transparent;
+    background-color: transparent;
+    text-align: center;
+}
+
+
+main {
+    font-family: sans-serif;
+    width: 90%;
+    padding: 10px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+}
+input {
+    text-align: center;
+}
+
+input[type='image'] {
+    margin-top: 2.5rem;
+}
+
+input[type='image'] {
+    width: 40px;
+    height: auto;
+}
+
+input[type=text] {
+  width: 100%;
+
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #B68D40;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+input[type=text]:focus {
+  border: 3px solid #D6AD60;
+}
+
+}

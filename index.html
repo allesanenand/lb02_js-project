@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>TravelSmart.</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/devisen.css">
+    <link rel="stylesheet" href="css/packing-list.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="shortcut icon" href="img/apple-touch-icon.png" sizes="196x196">
+    <link rel="shortcut icon" href="img/apple-touch-icon.png" type="image/png">
+
+
+</head>
+<body>
+<nav class="topfixednav">
+    <div class="navigation-float-right">
+        <button class="tablink" onclick="openPage('Home', this, '')" id="defaultOpen"><img src="img/nav-icons/home.png"
+                                                                                           alt="" class="navicons">
+        </button>
+        <button class="tablink" onclick="openPage('News', this, '')"><img src="img/nav-icons/currency.png" alt=""
+                                                                          class="navicons"></button>
+        <button class="tablink" onclick="openPage('Contact', this, '')"><img src="img/nav-icons/travel-todos.png"
+                                                                             class="navicons" alt=""></button>
+        <button class="tablink" onclick="openPage('About', this, '')"><img src="img/nav-icons/plane.png"
+                                                                           class="navicons" alt=""></button>
+        <button class="tablink" onclick="openPage('Team', this, '')"><img src="img/nav-icons/team.png" class="navicons"
+                                                                          alt=""></button>
+    </div>
+
+    <h1 class="title" onclick="openPage('Home', this, '')">TravelSmart.</h1>
+
+</nav>
+<div id="Home" class="tabcontent">
+    <div align="center">
+
+
+        <h2 class="title">Home.</h2>
+        <p>You're planning a holiday? Let's plan <span class="highlight">together!</span><br> We help you through the
+            <span class="highlight">planning</span> of your <span class="highlight">awesome holidays.</span></p>
+            <video id="" src="media/travel_blog.mp4" class="travelimg" autoplay poster="img/travel.jpg" autoplay muted loop></video>
+
+        <!--  <img src="img/travel.jpg" class="travelimg" alt="travelpic"> -->
+    </div>
+</div>
+<div id="News" class="tabcontent">
+    <div align="center">
+        <h2 class="title">Currency converter.</h2>
+        <p>You want to <span class="highlight">change</span> your <span class="highlight">money?</span><br>Here you can
+            check the <span class="highlight">exchange rate.</span></p> <br><br><br>
+
+        <article class="marginsmall">
+          <div align="center">
+
+
+            <div class="custom-select" >
+            <input type="text" id="localAmount" size="15" value="15.0"><br>
+            <select id="localExchange">
+                <option value="chf">CHF</option>
+            </select>
+            </div>
+
+
+
+
+              </div>
+              <br>
+
+
+            <img class="arrows" src="img/arrows-left.png" onclick="foreignToLocal();" alt=""> <img class="arrows" src="img/arrows-right.png" onclick="localToForeign();" alt="">
+            <br><br>
+
+
+            <select id="foreignExchange">
+                <option value="eur">EUR</option>
+                <option value="usd">USD</option>
+            </select>
+            <input type="text" id="foreignAmount" size="15" value="">
+        </article>
+        <script type="text/javascript" src="app/data.js"></script>
+        <script type="text/javascript" src="app/currencyapp.js"></script>
+
+
+    </div>
+</div>
+
+<div id="Contact" class="tabcontent">
+    <div align="center">
+        <h2 class="title">Packing List.</h2>
+        <p>No more: <br>"Oh sh*t, I <span class="highlight">forgot</span> my shirts at <span class="highlight">home!</span>"</p><br><br>
+
+
+        <!-- content -->
+        <div class="myDIV">
+            <input type="text" id="myInput" placeholder="Camera, Backpack, ..." class="paddingsmallright">
+            <span onclick="newElement()" class="addBtn floatrightelement">Add</span> <br><br>
+        </div>
+        <br><br><br>
+        <ul id="myUL">
+            <li>T-Shirts</li>
+            <li>Shorts</li>
+            <li>Travel-Kit</li>
+            <li>Medication</li>
+            <li>Book</li>
+            <li>Smartphone & Plug</li>
+        </ul>
+
+        <script type="text/javascript" src="app/packing-list.js"></script>
+
+        <!-- //content -->
+
+
+    </div>
+</div>
+
+<div id="About" class="tabcontent">
+    <div align="center">
+        <h2 class="title">Flightinformation @ ZRH.</h2>
+
+
+
+        <div class="airportia-widget">
+            <iframe scrolling="no" frameborder="0"
+                    style="border:0; width: 100%; height: 95%; min-height: 650px; margin:0; padding:0;"
+                    src="https://www.airportia.com/widgets/airport/zrh/departures/"></iframe>
+            <div style="font-family: arial,sans-serif; font-size:12px; color:#3f9bdc; width: 100%; text-align: center; margin-top: 2px; padding-top: 5px; border-top: 1px solid #65747e;">
+                </div>
+        </div>
+
+
+    </div>
+</div>
+
+<div id="Team" class="tabcontent">
+    <div align="center">
+
+
+        <h2 class="title">Who we are.</h2>
+        <p>We are the <span class="highlight">team</span> behind <span class="highlight">TravelSmart.</span></p>
+        <br><br>
+
+        <img src="img/jean-luc.png" height="200px" class="zoom" alt="travelpic">
+
+        <img src="img/nico.png" class="zoom" height="200px"alt="travelpic"><br>
+        <p><span class="highlight">Jean-Luc Hofer </span>& Nico Zimmermann</p>
+    </div>
+</div>
+
+<script type="text/javascript" src="app/navigation.js"></script>
+
+
+<div class="footer">
+    <p>&copy; 2021 Travel Smart, <a href="mailto:hello@travelsmart.com?subject=feedback">hello@travelsmart.com</a></p>
+</div>
+</body>
+</html>

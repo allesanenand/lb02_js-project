@@ -1,0 +1,146 @@
+#myVideo {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 90px;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.marginsmall{
+  margin-left: 40% !important;
+  margin-right: 40% !important;
+}
+
+.paddingsmallright{
+  width: 70% !important;
+  float: left;
+}
+
+.floatrightelement{
+  float: right !important;
+margin-top: 0.7% !important;
+}
+
+.topfixednav{
+  overflow: hidden;
+  position: fixed;
+
+  width: 100%;
+}
+
+
+
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Manrope', sans-serif;
+
+}
+
+.highlight {
+  color: #B68D40;
+  font-weight: bold;
+}
+.travelimg{
+  height: 500px;
+}
+
+.arrows{
+  height: 20px;
+  margin-bottom: 0;
+  margin-left: 3;
+  margin-right: 3;
+
+}
+
+.title{
+  margin-left: 10px;
+  color: #B68D40;
+  font-family: 'Rock Salt', cursive;
+
+
+}
+/* Style tab links */
+.tablink {
+
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+
+}
+
+.tablink:hover {
+  background-color: #D6AD60;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: black;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+  margin-left: 8%;
+  margin-right: 8%;
+}
+.navicons {
+  height: 20px;
+}
+
+.navigation-float-right{
+  float: right;
+  padding: 0%;
+  margin-right: 2%;
+  margin-top: 1.5%;
+}
+
+.infoicon {
+  height: 30px;
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: white;
+   color: #B68D40;
+   text-align: center;
+}
+
+a{
+  text-decoration: none;
+  color: #B68D40;
+}
+
+a:hover{
+  text-decoration: underline;
+  color: #D6AD60;
+}
+
+
+
+
+
+
+.zoom{
+  transition: transform .3s ease;
+  overflow: hidden;
+
+}
+
+.zoom:hover{
+transform: scale(1.07);
+filter: grayscale(0%);
+}
+
+.custom-select{
+
+}
